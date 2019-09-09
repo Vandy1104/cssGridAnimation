@@ -1,0 +1,40 @@
+body, html{
+  height:100%;
+  font-size:15px;
+  margin:0;
+  font-family: 'Gruppo', cursive;
+}
+h1{
+  font-size:4.5rem;
+}
+.contain{
+  display:grid;
+  /*  */
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.card{
+  cursor: pointer;
+}
+/* Image control & style */
+.hover-image{
+  /* display: none; */
+  width: 0%;
+  /* opacity: 0; */
+}
+
+.display-image{
+  width: 100%;
+}
+
+.card:hover .hover-image{
+  /* color: red; */
+  width: 15%;
+  position: absolute;
+  top: 35%;
+  transition: width 0.65s ease-in-out;
+  -webkit-transition: width 0.65s ease-in-out;
+  -webkit-box-shadow: 10px -23px 3px 43px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px -23px 3px 43px rgba(0,0,0,0.75);
+box-shadow: 10px -23px 3px 43px rgba(0,0,0,0.75);
+}
